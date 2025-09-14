@@ -24,14 +24,14 @@ const projects = [
     title: 'Responsive To-Do List – C#/HTML/JS',
     role: 'Developer | UI/UX',
     desc: 'Mobile-first to-do style app with add/remove/list and simple persistence.',
-    link: '/AndresQuintero_301466379_Assignment6/index.html',
+    link: '/AndresQuintero_301466379_Assignment5/index.html',
     // img: '/vite.svg' // replace with /projects/todo.png
   },
   {
     title: 'Fake Store – Products Catalog',
     role: 'Developer | Frontend',
     desc: 'Product grid with images, price formatting, and basic error handling.',
-    link: '/AndresQuintero_301466379_Assignment5/index.html',
+    link: '/AndresQuintero_301466379_Assignment6/index.html'
     // img: '/vite.svg' // replace with /projects/store.png
   }
 ]
