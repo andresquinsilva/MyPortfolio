@@ -1,0 +1,145 @@
+/* ======================================================
+  File: src/styles.css
+  Student's Name: Andres Quintero
+  StudentID: 301466379
+  Date: 2025-09-13
+  Description: Global dark theme styles for portfolio
+====================================================== */
+:root {
+  --bg: #0b0e13;
+  --panel: #12171f;
+  --text: #e7edf5;
+  --muted: #9fb3c8;
+  --accent: #5ea1ff;
+  --accent-2: #9b5efe;
+  --border: #1f2a37;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  color: var(--text);
+  background: radial-gradient(1200px 800px at 80% -10%, rgba(94, 161, 255, 0.08), transparent 60%),
+    radial-gradient(1200px 800px at 0% 110%, rgba(155, 94, 254, 0.07), transparent 60%),
+    var(--bg);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.08)), var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.15));
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+}
+
+.btn-primary {
+  border-color: var(--accent);
+  box-shadow: 0 8px 16px rgba(94, 161, 255, 0.25);
+}
+
+.link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 820px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: rgba(11, 14, 19, 0.6);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+}
+
+.nav a.active,
+.nav a:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.footer {
+  color: var(--muted);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+  display: block;
+}
