@@ -34,14 +34,16 @@ export default function About() {
       <section className="panel" style={{ padding: '1.2rem', marginTop: '1rem' }}>
         <h2 style={{ marginTop: 0 }}>Skills</h2>
         <div className="skills">
+          <span className="chip">Cloud Fundamentals</span>
+          <span className="chip">Networking Basics</span>
           <span className="chip">React</span>
           <span className="chip">JavaScript</span>
           <span className="chip">HTML</span>
           <span className="chip">CSS</span>
           <span className="chip">C#</span>
           <span className="chip">SQL</span>
-          <span className="chip">Git & GitHub</span>
           <span className="chip">REST APIs</span>
+          <span className="chip">Git & GitHub</span>
         </div>
       </section>
     </div>

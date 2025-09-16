@@ -333,3 +333,20 @@ img {
   box-shadow: 0 0 25px rgba(94, 161, 255, 0.6), 0 0 40px rgba(155, 94, 254, 0.5);
   transform: scale(1.03);
 }
+
+/* Subtitle under your name */
+.subtitle {
+  margin-top: .15rem;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.subtitle strong {
+  color: var(--text);
+}
+
+/* Optional goal cards tweak */
+.goal {
+  border-left: 3px solid var(--border);
+  padding-left: .75rem;
+}
