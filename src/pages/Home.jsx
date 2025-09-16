@@ -64,7 +64,7 @@ export default function Home() {
           <div style={{ display: 'flex', gap: '.6rem', flexWrap: 'wrap', marginTop: '0.9rem' }}>
             <a className="btn btn-primary" href="/Software Engineer Technology Resume  -PC.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             <a className="btn" href="https://github.com/andresquinsilva" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a className="btn" href="www.linkedin.com/in/andres-quintero-44a21b2a9" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a className="btn" href="https://www.linkedin.com/in/andres-quintero-44a21b2a9/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <Link className="btn" to="/projects">View Projects</Link>
           </div>
         </div>
