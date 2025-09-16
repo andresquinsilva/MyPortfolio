@@ -3,7 +3,6 @@
  * Student's Name: Andres Quintero
  * StudentID: 301466379
  * Date: 2025-09-13
- * Description: Custom AQ logo in hexagon SVG
  * ==================================================== */
 export default function Logo({ size = 36 }) {
   const s = size

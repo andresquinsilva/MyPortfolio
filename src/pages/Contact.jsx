@@ -3,7 +3,6 @@
  * Student's Name: Andres Quintero
  * StudentID: 301466379
  * Date: 2025-09-13
- * Description: Contact info + form that captures then redirects Home
  * ==================================================== */
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'

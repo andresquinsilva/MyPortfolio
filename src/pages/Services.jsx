@@ -3,7 +3,6 @@
  * Student's Name: Andres Quintero
  * StudentID: 301466379
  * Date: 2025-09-13
- * Description: Services offered
  * ==================================================== */
 const services = [
   { title: 'Web Development', desc: 'Responsive websites using React, HTML, CSS, and JavaScript.' },

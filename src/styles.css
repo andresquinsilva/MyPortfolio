@@ -3,7 +3,6 @@
   Student's Name: Andres Quintero
   StudentID: 301466379
   Date: 2025-09-13
-  Description: Global dark theme styles for portfolio
 ====================================================== */
 
 :root {
@@ -317,4 +316,20 @@ img {
 
 .mobile-panel {
   display: none;
+}
+
+/* ===== Profile picture ===== */
+.profile-pic {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  box-shadow: 0 0 25px rgba(94, 161, 255, 0.6), 0 0 40px rgba(155, 94, 254, 0.5);
+  transform: scale(1.03);
 }

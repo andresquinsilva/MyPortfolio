@@ -3,7 +3,6 @@
  * Student's Name: Andres Quintero
  * StudentID: 301466379
  * Date: 2025-09-13
- * Description: Top navigation with responsive mobile menu
  * ==================================================== */
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'

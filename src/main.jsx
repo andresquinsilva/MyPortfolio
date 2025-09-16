@@ -3,7 +3,6 @@
  * Student's Name: Andres Quintero
  * StudentID: 301466379
  * Date: 2025-09-13
- * Description: App bootstrap and Router provider
  * ==================================================== */
 import React from 'react'
 import { createRoot } from 'react-dom/client'

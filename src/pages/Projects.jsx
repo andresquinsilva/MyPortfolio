@@ -3,36 +3,31 @@
  * Student's Name: Andres Quintero
  * StudentID: 301466379
  * Date: 2025-09-13
- * Description: Project gallery with thumbnails, links, and artifacts
  * ==================================================== */
 
 import React from 'react'
 
 
-const STUDY_BUDDY_PRESENTATION = encodeURI('/Study buddy presentation - Presentation.pdf') 
+const STUDY_BUDDY_PRESENTATION = encodeURI('/Study buddy presentation - Presentation.pdf')
 const ASSIGNMENT_3_SQL = encodeURI('/Assignment 3.sql')
 
-// Quick thumbnails (replace with real screenshots later, e.g. /projects/todo.png)
 const projects = [
   {
     title: 'Study Buddy – Software Requirements (SRS)',
     role: 'Team member | Agile | Documentation',
     desc: 'Co-authored an SRS with requirements, UML diagrams, and QA checks.',
-    // img: '/vite.svg' // replace with /projects/srs.png
   },
   {
     title: 'Responsive To-Do List – C#/HTML/JS',
     role: 'Developer | UI/UX',
     desc: 'Mobile-first to-do style app with add/remove/list and simple persistence.',
     link: '/AndresQuintero_301466379_Assignment5/index.html',
-    // img: '/vite.svg' // replace with /projects/todo.png
   },
   {
     title: 'Fake Store – Products Catalog',
     role: 'Developer | Frontend',
     desc: 'Product grid with images, price formatting, and basic error handling.',
     link: '/AndresQuintero_301466379_Assignment6/index.html'
-    // img: '/vite.svg' // replace with /projects/store.png
   }
 ]
 

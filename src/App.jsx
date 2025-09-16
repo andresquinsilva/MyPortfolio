@@ -3,7 +3,6 @@
  * Student's Name: Andres Quintero
  * StudentID: 301466379
  * Date: 2025-09-13
- * Description: Main app structure with NavBar, routes, and footer
  * ==================================================== */
 
 import { Routes, Route } from "react-router-dom"

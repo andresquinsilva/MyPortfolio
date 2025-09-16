@@ -3,7 +3,6 @@
  * Student's Name: Andres Quintero
  * StudentID: 301466379
  * Date: 2025-09-13
- * Description: About page with bio, resume link, and skills
  * ==================================================== */
 
 export default function About() {
