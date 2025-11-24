@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "COMP229 A3 API",
+    "_postman_id": "comp229-a3-collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Base - Welcome",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api"
+      }
+    },
+    {
+      "name": "Contacts - Get All",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/contacts"
+      }
+    },
+    {
+      "name": "Contacts - Create",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"firstname\": \"Andres\", \"lastname\": \"Quintero\", \"email\": \"andres@example.com\"}"
+        },
+        "url": "http://localhost:3000/api/contacts"
+      }
+    },
+    {
+      "name": "Users - Get All",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/users"
+      }
+    },
+    {
+      "name": "Users - Create",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Andres Quintero\", \"email\": \"andres@example.com\", \"password\": \"test123\"}"
+        },
+        "url": "http://localhost:3000/api/users"
+      }
+    }
+  ]
+}

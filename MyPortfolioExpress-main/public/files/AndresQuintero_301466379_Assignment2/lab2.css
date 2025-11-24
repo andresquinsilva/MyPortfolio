@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.titlesforbook {
+    display: flex;
+    flex-direction: column;
+}
+
+.one {
+    text-align: center;
+}
+
+input,
+select {
+    padding: 4px;
+}
+
+.add-book {
+    background-color: #4CAF50;
+    color: white;
+    border: 8px;
+    border-color: #4CAF50;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 2px;
+}
+
+.add-book,
+.remove-book,
+button:hover {
+    background-color: #45a049;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-category {
+    text-align: center;
+}
+
+.remove-book {
+    background-color: #4CAF50;
+    color: white;
+    border: 8px;
+    border-color: #4CAF50;
+    cursor: pointer;
+    height: 30px;
+    width: 160px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: 8px;
+    border-color: #4CAF50;
+    cursor: pointer;
+    height: 30px;
+    width: 160px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: lightgray;
+    color: blue;
+    font-weight: bold;
+
+}

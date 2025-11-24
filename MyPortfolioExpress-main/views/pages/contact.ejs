@@ -1,0 +1,38 @@
+<%- include('../partials/head') %>
+  <%- include('../partials/header') %>
+
+    <main class="container page-enter">
+      <section class="panel padded">
+        <h1 class="m-0">Contact</h1>
+        <p style="color:var(--muted)">Use the form or the info below.</p>
+
+        <div style="display:grid; gap:1rem; grid-template-columns:1fr">
+          <div class="panel padded">
+            <div class="label">Email</div>
+            <a class="link" href="mailto:Quintero.silva14@gmail.com">Quintero.silva14@gmail.com</a>
+
+            <div class="label" style="margin-top:.8rem">Phone</div>
+            <a class="link" href="tel:+16476879722">647-687-9722</a>
+
+            <div class="label" style="margin-top:.8rem">Location</div>
+            <div>Vaughan, Ontario</div>
+          </div>
+
+          <form class="panel padded" action="/contact" method="POST">
+            <div class="label">First Name</div>
+            <input class="input" name="firstName" required>
+            <div class="label" style="margin-top:.8rem">Last Name</div>
+            <input class="input" name="lastName" required>
+            <div class="label" style="margin-top:.8rem">Contact Number</div>
+            <input class="input" name="phone">
+            <div class="label" style="margin-top:.8rem">Email Address</div>
+            <input type="email" class="input" name="email" required>
+            <div class="label" style="margin-top:.8rem">Message</div>
+            <textarea class="textarea" name="message" rows="4"></textarea>
+            <button class="btn btn-primary" type="submit" style="margin-top:1rem">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <%- include('../partials/footer') %>

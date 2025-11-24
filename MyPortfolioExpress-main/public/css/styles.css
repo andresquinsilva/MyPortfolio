@@ -1,0 +1,378 @@
+/* ======================================================
+  File: public/css/styles.css
+  Student: Andres Quintero (301466379)
+  Desc: Dark portfolio theme + micro-interactions (nav, buttons, cards)
+====================================================== */
+
+/* ---------- Theme tokens ---------- */
+:root {
+  --bg: #0b0e13;
+  --panel: #12171f;
+  --text: #e7edf5;
+  --muted: #9fb3c8;
+  --accent: #5ea1ff;
+  --accent-2: #9b5efe;
+  --border: #1f2a37;
+
+  --shadow-1: 0 10px 30px rgba(0, 0, 0, .25);
+  --shadow-2: 0 18px 40px rgba(94, 161, 255, .20);
+  --ring: 0 0 0 3px rgba(94, 161, 255, .45);
+
+  /* Motion */
+  --t-fast: .15s cubic-bezier(.2, .7, .3, 1);
+  --t-med: .25s cubic-bezier(.2, .7, .3, 1);
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box
+}
+
+html,
+body {
+  height: 100%
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  line-height: 1.55;
+  background:
+    radial-gradient(1200px 800px at 80% -10%, rgba(94, 161, 255, .08), transparent 60%),
+    radial-gradient(1200px 800px at 0% 110%, rgba(155, 94, 254, .07), transparent 60%),
+    var(--bg);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block
+}
+
+h1,
+h2 {
+  letter-spacing: .2px;
+  margin: 0 0 .55rem
+}
+
+p {
+  margin: .3rem 0
+}
+
+/* ---------- Frame ---------- */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.25rem
+}
+
+main>section {
+  margin-top: 1rem
+}
+
+/* ---------- Panels / cards ---------- */
+.panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(0, 0, 0, .08)), var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-1);
+}
+
+.panel.padded {
+  padding: 1.2rem
+}
+
+.card {
+  transition: transform var(--t-med), box-shadow var(--t-med), border-color var(--t-med)
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-2)
+}
+
+/* ---------- Chips ---------- */
+.skills,
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem
+}
+
+.chip {
+  padding: .45rem .8rem;
+  border-radius: 999px;
+  font-size: .92rem;
+  color: var(--text);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, .04);
+  transition: transform var(--t-fast), border-color var(--t-fast), box-shadow var(--t-fast);
+}
+
+.chip:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-2)
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: .7rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  background: linear-gradient(180deg, rgba(255, 255, 255, .05), rgba(0, 0, 0, .15));
+  transition:
+    transform var(--t-fast),
+    border-color var(--t-fast),
+    box-shadow var(--t-fast),
+    background var(--t-fast);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-2)
+}
+
+.btn:active {
+  transform: translateY(0) scale(.98);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .35)
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: var(--ring)
+}
+
+.btn-primary {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-2)
+}
+
+.btn-primary:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(0, 0, 0, .18))
+}
+
+/* ---------- Inputs ---------- */
+.input,
+.textarea {
+  width: 100%;
+  padding: .8rem 1rem;
+  color: var(--text);
+  background: rgba(255, 255, 255, .03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: box-shadow var(--t-fast), border-color var(--t-fast), background var(--t-fast);
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--ring)
+}
+
+.label {
+  color: var(--muted);
+  font-size: .95rem;
+  margin-bottom: .35rem;
+  display: block
+}
+
+/* ---------- Header / Navigation ---------- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: rgba(11, 14, 19, .6);
+  border-bottom: 1px solid var(--border);
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .75rem 1.25rem
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text)
+}
+
+.logo {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle
+}
+
+.header .logo {
+  max-width: none
+}
+
+.brand-text {
+  font-weight: 700
+}
+
+.links {
+  margin-left: auto;
+  display: flex;
+  gap: .35rem
+}
+
+.links a {
+  position: relative;
+  color: var(--muted);
+  text-decoration: none;
+  padding: .5rem .7rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: color var(--t-fast), background var(--t-fast), transform var(--t-fast);
+}
+
+.links a:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, .06);
+  transform: translateY(-1px)
+}
+
+.links a:active {
+  transform: translateY(0) scale(.98)
+}
+
+.links a.active {
+  color: var(--text);
+  background: rgba(255, 255, 255, .06)
+}
+
+/* underline slide */
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 6px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--t-med);
+}
+
+.links a:hover::after,
+.links a.active::after {
+  transform: scaleX(1)
+}
+
+/* ---------- Home hero ---------- */
+.hero {
+  padding: 1.6rem;
+  position: relative;
+  overflow: hidden
+}
+
+.hero-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 180px 1fr;
+  align-items: center
+}
+
+@media (max-width:900px) {
+  .hero-grid {
+    grid-template-columns: 1fr
+  }
+}
+
+.profile-pic {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .4);
+  transition: transform var(--t-fast), box-shadow var(--t-fast);
+}
+
+.profile-pic:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(94, 161, 255, .6), 0 0 40px rgba(155, 94, 254, .5)
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-top: .15rem;
+  font-size: 1.05rem
+}
+
+.subtitle strong {
+  color: var(--text)
+}
+
+.cta-row {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  margin-top: .9rem
+}
+
+/* ---------- Lists ---------- */
+.goal {
+  border-left: 3px solid var(--border);
+  padding-left: .75rem
+}
+
+.list {
+  margin: .2rem 0 0 1rem;
+  line-height: 1.8
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  color: var(--muted);
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border)
+}
+
+.footer .cta-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap
+}
+
+/* ---------- Fade-in on page load ---------- */
+.page-enter {
+  animation: fadeUp .45s ease both
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+/* ---------- Prefers-reduced-motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important
+  }
+}

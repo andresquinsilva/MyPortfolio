@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="stylesheet" href="./lab2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Online Libary System</h1>
+        <div class="titlesforbook">
+            <div class="one">
+                <input type="text" id="book-title" placeholder="Book title">
+                <input type="text" id="book-author" placeholder="Author">
+                <select id="book-status">
+                    <option value="available">Available</option>
+                    <option value="borrowed">Borrowed</option>
+                    <option value="overdue">Overdue</option>
+                </select>
+                <button class="add-book" onclick="addBook()">Add Book</button>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="book-category">
+                <h2>Available Books</h2>
+                <ul id="available-books"></ul>
+            </div>
+
+            <div class="book-category">
+                <h2>Borrowed Books</h2>
+                <ul id="borrowed-books"></ul>
+            </div>
+
+            <div class="book-category">
+                <h2>Overdue Books</h2>
+                <ul id="overdue-books"></ul>
+            </div>
+            <div class="book-category">
+                <button class="remove-book" onclick="removeOverdueBooks()">Remove Overdue Books</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lab2.js"></script>
+    </div>
+</body>
+
+</html>
